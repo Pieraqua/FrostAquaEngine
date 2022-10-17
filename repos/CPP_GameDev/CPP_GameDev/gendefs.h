@@ -2,5 +2,8 @@
 /**
 * Definicoes gerais do programa.
 */
+#include <string>
+using namespace std;
 
-#define LAZYFOO_PATH "../../../LazyFoo/"
+
+string LAZYFOO_PATH = "../../../LazyFoo/"

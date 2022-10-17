@@ -3,20 +3,24 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
     <SDL_PATH>C:\Users\Paulo\Documents\Junior\Programacao\Libs\SDL2-2.24.1</SDL_PATH>
+    <SDL_IMAGE_PATH>C:\Users\Paulo\Documents\Junior\Programacao\Libs\SDL2_image-2.6.2</SDL_IMAGE_PATH>
   </PropertyGroup>
   <PropertyGroup>
-    <IncludePath>$(SDL_PATH)/include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SDL_PATH)/lib/x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SDL_PATH)/include;$(IncludePath);$(SDL_IMAGE_PATH)/include;</IncludePath>
+    <LibraryPath>$(SDL_PATH)/lib/x64;$(LibraryPath);$(SDL_IMAGE_PATH)/lib/x64;</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <Link>
-      <AdditionalLibraryDirectories>$(SDL_PATH)/lib/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SDL_PATH)/lib/x64;$(SDL_IMAGE_PATH)/lib/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="SDL_PATH">
       <Value>$(SDL_PATH)</Value>
+    </BuildMacro>
+    <BuildMacro Include="SDL_IMAGE_PATH">
+      <Value>$(SDL_IMAGE_PATH)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>
