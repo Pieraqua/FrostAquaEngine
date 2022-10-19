@@ -28,6 +28,9 @@
     <Filter Include="Engine\Graphics">
       <UniqueIdentifier>{7d3dd83c-28ed-4ae3-a5d6-dbecc0cde3a0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Engine\Entities">
+      <UniqueIdentifier>{102c6684-eea3-4278-993f-ced307781817}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -45,6 +48,9 @@
     <ClCompile Include="graphics.cpp">
       <Filter>Engine\Graphics</Filter>
     </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Engine\Entities</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Map.h">
@@ -58,6 +64,9 @@
     </ClInclude>
     <ClInclude Include="graphics.h">
       <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Engine\Entities</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

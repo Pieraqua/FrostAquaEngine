@@ -147,9 +147,11 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Map.cpp" />
     <ClCompile Include="MapDrawer.cpp" />
+    <ClCompile Include="Entity.cpp" />
     <ClCompile Include="Tile.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Entity.h" />
     <ClInclude Include="MapDrawer.h" />
     <ClInclude Include="Tile.h" />
     <ClInclude Include="Map.h" />
